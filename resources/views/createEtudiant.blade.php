@@ -5,6 +5,7 @@
         <h3 class="border-bottom pb-2 mb-2">Ajout nouvel étudiant</h3>
         <div class="mt-4">
             <form style="width: 65%;" method="post" action="{{route('etudiant.ajouter')}}">
+                @csrf
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Nom de l'étudiant</label>
                   <input type="text" class="form-control">
